@@ -8,8 +8,8 @@ x1 = [380, 420, 290]
 y1 = [140, 360, 200, 900]
 
 z = stats.mannwhitneyu(x1, y1)
-st, p = stats.mannwhitneyu(x1, y1)
 print('Statistics = %.3f, Р-value = %.3f' % (z))
+st, p = stats.mannwhitneyu(x1, y1)
 if p > alpha:
     print('Cтатистически значимых различий нет, нулевая гипотеза не отвергается')
 else:
